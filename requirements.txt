@@ -1,0 +1,27 @@
+# Flask Web Framework
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# Flask Extensions
+Flask-CORS==4.0.0
+Flask-RESTful==0.3.10
+flasgger==0.9.7.1
+
+# Image Processing
+Pillow==10.0.0
+
+# Data Processing
+numpy==1.24.3
+
+# Machine Learning (Optional - for image recognition)
+# Uncomment the following lines if you need image recognition feature
+torch==2.0.1
+torchvision==0.15.2
+transformers==4.31.0
+
+# Production Server (Optional)
+gunicorn==21.2.0
+
+# Development Tools (Optional)
+# pytest==7.4.0
+# pytest-cov==4.1.0
