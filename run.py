@@ -6,6 +6,7 @@ Flask应用启动入口
 
 import os
 import sys
+from pathlib import Path
 
 
 def main():
@@ -31,8 +32,6 @@ def main():
     print("="*60)
     print("💡 提示:")
     print("   - 按 Ctrl+C 停止服务器")
-    if debug:
-        print("   - 修改代码后服务器会自动重启")
     print("="*60)
     print()
     
@@ -42,7 +41,7 @@ def main():
             host=host,
             port=port,
             debug=debug,
-            use_reloader=debug,
+            use_reloader=False,
             threaded=True
         )
     except KeyboardInterrupt:
@@ -55,4 +54,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
